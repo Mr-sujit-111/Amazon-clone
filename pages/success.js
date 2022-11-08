@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import React from 'react'
 import Header from '../components/Header'
 
-function success() {
+function Success() {
     const route = useRouter();
     return (
         <div className='bg-gray-100 h-screen' >
@@ -26,4 +26,4 @@ function success() {
     )
 }
 
-export default success
+export default Success

@@ -5,7 +5,7 @@ import Header from "../components/Header"
 import Order from "../components/Order";
 import { db, fireStoredata } from "../firebase";
 
-function orderlist({ orders }) {
+function Orderlist({ orders }) {
     const session = useSession();
     return (
         <div>
@@ -29,7 +29,7 @@ function orderlist({ orders }) {
     )
 }
 
-export default orderlist
+export default Orderlist
 
 export async function getServerSideProps(context) {
     const stripe = require('stripe')(process.env.STRIPE_SECRET);
