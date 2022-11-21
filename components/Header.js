@@ -10,7 +10,6 @@ function Header() {
     const session = useSession();
     const route = useRouter();
     const items = useSelector(selectedItems);
-    console.log(items);
     const dispatch = useDispatch();
 
     const handleSellClick = (e) => {
@@ -42,7 +41,7 @@ function Header() {
                         {session.data ? <p>Hello, {session.data.user.name}</p> : "Sign-in"}
                         <p className="font-bold whitespace-pre hover:link">Account</p>
                     </div>
-                    <div className="mx-3 cursor-pointer" onClick={() => route.push("/order-list")}>
+                    <div className="mx-3 cursor-pointer" onClick={() => route.push("/orderlist")}>
                         <p>Returns</p>
                         <p className="font-bold whitespace-pre hover:link">& Orders</p>
                     </div>
