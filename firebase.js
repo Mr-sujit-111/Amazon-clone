@@ -19,7 +19,6 @@ const q = query(collectionGroup(db, "users"));
 export const stripeOrders = await getDocs(q);
 
 export const fireStoredata = stripeOrders.docs.map((doc) => {
-    console.log(doc);
     return ({ ...doc.data(), id: doc.id })
 })
 

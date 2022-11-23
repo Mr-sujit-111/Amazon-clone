@@ -1,7 +1,8 @@
 import { CheckCircleIcon } from '@heroicons/react/24/outline'
 import { useRouter } from 'next/router';
 import React from 'react'
-import Header from '../components/Header'
+import Header from '../components/Header';
+
 
 function Success() {
     const route = useRouter();

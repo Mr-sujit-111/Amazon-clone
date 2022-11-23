@@ -54,22 +54,6 @@ function Header() {
                     </div>
                 </div>
             </div>
-            {/* second navbar */}
-            <div className="bg-[#232F3E] text-white space-x-4 flex items-center p-3">
-                <div className="flex items-center" onClick={() => route.push("/")}>
-                    <p className="whitespace-nowrap hover:link font-bold" onClick={handleSellClick}>All</p>
-                </div>
-                <p className="whitespace-nowrap hover:link font-bold" onClick={handleSellClick}>Men</p>
-                <p className="whitespace-nowrap hover:link font-bold" onClick={handleSellClick}>jewelry</p>
-                <p className="whitespace-nowrap hover:link font-bold" onClick={handleSellClick}>Electronics</p>
-                <p className="whitespace-nowrap hover:link hidden sm:inline-block font-bold" onClick={handleSellClick}>Women</p>
-                <p className="whitespace-nowrap hover:link hidden sm:inline-block font-bold">sell</p>
-                <p className="whitespace-nowrap hover:link hidden sm:inline-block font-bold">Books</p>
-                <p className="whitespace-nowrap hover:link hidden md:inline-block font-bold">home & kitchen</p>
-                <p className="whitespace-nowrap hover:link hidden lg:inline-block font-bold">Computers</p>
-                <p className="whitespace-nowrap hover:link hidden lg:inline-block font-bold">Fashion</p>
-                <p className="whitespace-nowrap hover:link hidden lg:inline-block font-bold">Mobiles</p>
-            </div>
         </div>
     )
 }
