@@ -1,5 +1,4 @@
 import moment from "moment";
-import Image from "next/image";
 import Currency from 'react-currency-formatter';
 
 function Order({ amount, id, images, items, timestamp }) {

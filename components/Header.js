@@ -1,6 +1,6 @@
 import Image from "next/image"
 import AmazonLogo from "../assets/images/amazon-logo.png";
-import { InboxIcon, ShoppingCartIcon, MoonIcon } from '@heroicons/react/24/outline'
+import { InboxIcon, ShoppingCartIcon } from '@heroicons/react/24/outline'
 import { useSession, signIn, signOut } from "next-auth/react"
 import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
@@ -10,12 +10,6 @@ function Header() {
     const session = useSession();
     const route = useRouter();
     const items = useSelector(selectedItems);
-    const dispatch = useDispatch();
-
-    const handleSellClick = (e) => {
-        const filterValue = (e.target.innerText).toLowerCase();
-    }
-
     return (
         <div>
             <div className="bg-[#131921]  p-3 flex">

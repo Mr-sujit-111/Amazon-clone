@@ -39,9 +39,6 @@ function CheckoutItem({ repeatNumber, category, title, price, description, img, 
             category, title, price, description, img, id
         }
         dispatch(addToCart(product));
-        /* setTimeout(() => {
-            window.scrollTo(0, document.body.scrollHeight);
-        }, 200); */
         addItemAlert();
     }
 

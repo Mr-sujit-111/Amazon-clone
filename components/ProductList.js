@@ -1,18 +1,7 @@
-import { useSelector } from "react-redux"
-import { addSelectedFilter } from "../store/_filterSlice";
 import ProductItem from "./ProductItem"
 import { motion } from "framer-motion"
 
 function ProductList({ products }) {
-    const selectedFilter = (useSelector(addSelectedFilter));
-    const myFilter = selectedFilter.payload.filterValue;
-
-    /* useEffect(() => {
-        if (myFilter !== "all") {
-            const final = products.filter((item, index) => { (item.category.slice(0, 1) === myFilter.slice(0, 1)) })
-        }
-    }, [myFilter]) */
-
     return (
         <div className="backdrop-blur grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:-mt-52">
             {products.slice(0, 4).map(({ id, title, price, description, category, image }, index) => (

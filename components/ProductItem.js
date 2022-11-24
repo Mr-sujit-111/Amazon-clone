@@ -77,7 +77,6 @@ function ProductItem({ id, title, price, description, category, img }) {
             <p className="my-3 line-clamp-2">{title}</p>
             <Image src={img} height={200} width={200} objectFit="contain" />
 
-            {/* {isPrime && (<p>prime service</p>)} */}
             <p className="text-xs my-2 line-clamp-2">{description}</p>
             <div className="mb-5">
                 <Currency

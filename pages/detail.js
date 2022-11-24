@@ -84,7 +84,7 @@ function Detail() {
                     {/* leftSidebar */}
                     <div className="flex justify-center sm:justify-start items-center">
                         <div className="rounded-md relative w-[50vh] h-[50vh] overflow-hidden m-0  bg-gray-200">
-                            <img src={item.img} className="block rounded-md absolute h-full w-full top-0 left-0 p-5" alt="image" srcset="" />
+                            <img src={item.img} className="block object-contain rounded-md absolute h-full w-full top-0 left-0 p-5" alt="image" />
                         </div>
                     </div>
                     {/* rightSidebar-1*/}
